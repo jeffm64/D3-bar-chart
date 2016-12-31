@@ -1,0 +1,249 @@
+/*//////////////////////////////////////
+	UNIVERSAL
+//////////////////////////////////////*/
+
+* {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-weight: normal;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding: 0;
+	margin: 0;
+	font-weight: normal;
+}
+
+img,
+video {
+	max-width: 100%;
+}
+
+input, button, select, textarea, submit {
+	border: none;
+}
+
+/* ---- Float clearfix ---- */
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+
+/*//////////////////////////////////////
+	TEXT TRANSFORM
+//////////////////////////////////////*/
+
+/*Uppercase*/
+
+/*Lowercase*/
+
+/*Capitalize*/
+h1 {
+  text-transform: capitalize;
+}
+
+/*Bold*/
+.amount-content,
+.amount-content span,
+.x-axis-label,
+.y-axis-label {
+    font-weight: bold;
+}
+
+
+
+/*//////////////////////////////////////
+	FONTS
+//////////////////////////////////////*/
+
+/*PATUA ONE*/
+h1 {
+  font-family: 'Patua One', sans-serif;
+}
+
+
+/*//////////////////////////////////////
+	COLORS
+//////////////////////////////////////*/
+
+/*BLACK*/
+.amount-content,
+.date {
+  color: black;
+}
+
+/*GREEN*/
+rect {
+  fill: #58BF4D;
+}
+
+.site-container {
+  background-color: #58BF4D;
+}
+
+/*PINK*/
+h1 {
+  color: #BA3F8F;
+}
+
+svg rect:hover {
+  fill: #BA3F8F;
+}
+
+/*WHITE*/
+.site-content {
+  background-color: white;
+}
+
+#tooltip {
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+
+
+/*//////////////////////////////////////
+	D3 BAR CHART
+//////////////////////////////////////*/
+
+.site-content {
+  text-align: center;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 50px 15px;
+}
+
+.chart {
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+  }
+
+h1 {
+  font-size: 50px;
+}
+
+
+
+/*//////////////////////////////////////
+	BARS
+//////////////////////////////////////*/
+
+rect {
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+
+
+/*//////////////////////////////////////
+	AXIS
+//////////////////////////////////////*/
+
+.x-axis path,
+.x-axis line,
+.y-axis path,
+.y-axis line {
+  fill: none;
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+
+.x-axis text,
+.y-axis text {
+  font-size: 17px;
+}
+
+
+
+/*//////////////////////////////////////
+	TOOLTIP
+//////////////////////////////////////*/
+
+#tooltip {
+  position: absolute;
+  width: 200px;
+  padding: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  z-index: 5;
+}
+
+.hidden {
+  display: none;
+}
+
+#tooltip p {
+  margin: 0;
+}
+
+.amount-content {
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+.date {
+  font-size: 14px;
+  text-shadow: 3px 0px 2px rgba(150, 150, 150, 1);
+}
+
+
+
+/*//////////////////////////////////////
+////////////////////////////////////////
+	MEDIA QUERIES
+////////////////////////////////////////
+//////////////////////////////////////*/
+
+@media (min-width: 600px) {
+  
+  .chart {
+    width: 680px;
+    height: 500px;
+  }
+  
+  
+}
+
+
+@media (min-width: 900px) {
+  
+  .chart {
+    width: 900px;
+    height: 500px;
+  }
+  
+  
+  
+}
+
+@media (min-width: 1000px) {
+  
+  .chart {
+    width: 1200px;
+    height: 500px;
+  }
+  
+  
+  
+}

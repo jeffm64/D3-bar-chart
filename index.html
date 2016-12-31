@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+		<title>D3 Bar Chart</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale 1.0"> 
+  </head>
+  <body class="site-container">
+    <div class="site-content">
+      <h1>Gross domestic product</h1>
+      <div class="chart" id="chart">
+        <div id="tooltip" class="hidden">
+          <p class="amount-content">$<span class="amount">Amounts go here</span> Billion</p>
+          <p><span class="date">date goes here</span></p>
+        </div>
+      </div>
+      <p>Units: Billions of Dollars Seasonal Adjustment: Seasonally Adjusted Annual Rate Notes: A Guide to the National Income and Product Accounts of the United States (NIPA) - (http://www.bea.gov/national/pdf/nipaguid.pdf)</p>
+    </div>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
